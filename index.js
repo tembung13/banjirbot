@@ -5,7 +5,7 @@ const axios = require("axios");
 const app = express();
 app.use(bodyParser.json());
 
-const firebaseUrl = "https://banjir-5550a-default-rtdb.asia-southeast1.firebasedatabase.app"; // ganti dengan URL Firebase kamu
+const firebaseUrl = "https://banjir-5550a-default-rtdb.asia-southeast1.firebasedatabase.app/"; 
 
 app.post("/webhook", async (req, res) => {
   const message = req.body.message;
